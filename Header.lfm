@@ -1,13 +1,14 @@
 object FormHeader: TFormHeader
-  Left = 716
-  Height = 612
-  Top = 255
-  Width = 902
+  Left = 354
+  Height = 670
+  Top = 571
+  Width = 1015
   AlphaBlend = True
   Caption = 'Core Constructor'
-  ClientHeight = 592
-  ClientWidth = 902
+  ClientHeight = 645
+  ClientWidth = 1015
   Color = clBtnFace
+  DesignTimePPI = 120
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
@@ -16,37 +17,37 @@ object FormHeader: TFormHeader
   OnCreate = FormCreate
   OnDeactivate = FormDeactivate
   OnResize = FormResize
-  LCLVersion = '1.4.2.0'
+  LCLVersion = '1.8.2.0'
   Visible = True
   object PageControl1: TPageControl
     Left = 0
-    Height = 592
+    Height = 645
     Top = 0
-    Width = 902
-    ActivePage = TabSheet1
+    Width = 1015
+    ActivePage = TabSheet4
     Align = alClient
     Font.Color = clWindowText
     Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
-    TabIndex = 0
+    TabIndex = 3
     TabOrder = 0
     TabPosition = tpLeft
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
       Caption = 'Log'
-      ClientHeight = 584
-      ClientWidth = 872
+      ClientHeight = 637
+      ClientWidth = 985
       Font.Color = clWindowText
       Font.Height = -20
       Font.Name = 'Tahoma'
       ParentFont = False
       object Memo1: TMemo
         Left = 0
-        Height = 584
+        Height = 637
         Top = 0
-        Width = 872
+        Width = 985
         Align = alClient
         Lines.Strings = (
           ''
@@ -101,13 +102,14 @@ object FormHeader: TFormHeader
     end
     object TabSheet3: TTabSheet
       Caption = 'Queue'
-      ClientHeight = 584
-      ClientWidth = 872
+      ClientHeight = 637
+      ClientWidth = 985
       object ToolBar: TToolBar
         Left = 0
         Height = 26
         Top = 0
-        Width = 872
+        Width = 985
+        ButtonHeight = 28
         ButtonWidth = 35
         Caption = 'ToolBar'
         Images = ImageList1
@@ -166,9 +168,9 @@ object FormHeader: TFormHeader
       end
       object List: TListBox
         Left = 0
-        Height = 558
+        Height = 611
         Top = 26
-        Width = 872
+        Width = 985
         Align = alClient
         ItemHeight = 0
         TabOrder = 1
@@ -176,27 +178,27 @@ object FormHeader: TFormHeader
     end
     object TabSheet4: TTabSheet
       Caption = 'Tables'
-      ClientHeight = 579
-      ClientWidth = 872
+      ClientHeight = 637
+      ClientWidth = 985
       object PageControl2: TPageControl
         Left = 0
-        Height = 579
+        Height = 637
         Top = 0
-        Width = 872
-        ActivePage = TabSheet6
+        Width = 985
+        ActivePage = TabSheet5
         Align = alClient
-        TabIndex = 1
+        TabIndex = 0
         TabOrder = 0
         OnChange = PageControl2Change
         object TabSheet5: TTabSheet
           Caption = 'Materials'
-          ClientHeight = 550
-          ClientWidth = 864
+          ClientHeight = 608
+          ClientWidth = 977
           object ToolBar1: TToolBar
             Left = 0
             Height = 26
             Top = 0
-            Width = 864
+            Width = 977
             Caption = 'ToolBar1'
             Images = ImageList1
             TabOrder = 0
@@ -231,9 +233,9 @@ object FormHeader: TFormHeader
           end
           object Gridmat: TIBDynamicGrid
             Left = 0
-            Height = 524
+            Height = 582
             Top = 26
-            Width = 864
+            Width = 977
             Align = alClient
             Color = clWindow
             Columns = <            
@@ -328,16 +330,16 @@ object FormHeader: TFormHeader
         end
         object TabSheet6: TTabSheet
           Caption = 'Geometry'
-          ClientHeight = 550
-          ClientWidth = 864
+          ClientHeight = 608
+          ClientWidth = 977
           object Panel1: TPanel
             Left = 0
             Height = 32
             Top = 0
-            Width = 864
+            Width = 977
             Align = alTop
             ClientHeight = 32
-            ClientWidth = 864
+            ClientWidth = 977
             TabOrder = 0
             object ToolBar2: TToolBar
               Left = 1
@@ -380,9 +382,9 @@ object FormHeader: TFormHeader
           end
           object IBDynamicGrid1: TIBDynamicGrid
             Left = 0
-            Height = 518
+            Height = 576
             Top = 32
-            Width = 864
+            Width = 977
             Align = alClient
             Color = clWindow
             Columns = <            
@@ -796,23 +798,26 @@ object FormHeader: TFormHeader
   object DataSourceMat: TDataSource
     DataSet = QueryMat
     left = 464
-    top = 224
+    top = 184
   end
   object QueryMat: TIBQuery
+    AllowAutoActivateTransaction = True
     Database = DM.rDatabase
     Transaction = TransactionMat
     BufferChunks = 1000
     CachedUpdates = False
+    EnableStatistics = False
     GenerateParamNames = False
     GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
     SQL.Strings = (
       'Select A.ID, A.DENSITY, A.DESCRIPTION, A.TEMPERATURE, A.MASSA, '
       'A.NAME, A.DATETIME, A.USERNAME From MATERIAL A'
     )
     Params = <>
     DataSetCloseAction = dcDiscardChanges
-    left = 464
-    top = 312
+    left = 456
+    top = 368
     object QueryMatNAME: TIBStringField
       DisplayWidth = 256
       FieldKind = fkData
@@ -867,6 +872,7 @@ object FormHeader: TFormHeader
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = False
+      DisplayFormat = '###.##'
       MaxValue = 0
       MinValue = 0
       Precision = 2
@@ -880,6 +886,7 @@ object FormHeader: TFormHeader
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = False
+      DisplayFormat = '###.##'
       MaxValue = 0
       MinValue = 0
       Precision = 2
@@ -907,7 +914,7 @@ object FormHeader: TFormHeader
     end
   end
   object TransactionMat: TIBTransaction
-    Active = False
+    Active = True
     DefaultDatabase = DM.rDatabase
     Params.Strings = (
       'read_committed'
@@ -927,16 +934,19 @@ object FormHeader: TFormHeader
   end
   object DataSourceGeom: TDataSource
     DataSet = QueryGeom
-    left = 608
-    top = 224
+    left = 600
+    top = 192
   end
   object QueryGeom: TIBQuery
+    AllowAutoActivateTransaction = True
     Database = DM.rDatabase
     Transaction = TransactionMat
     BufferChunks = 1000
     CachedUpdates = False
+    EnableStatistics = False
     GenerateParamNames = False
     GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
     SQL.Strings = (
       'Select A.ID, A.NAME, A.DESCRIPTION, A.AREA, A.DATETIME, A.USERNAME '
       'From GEOMETRY A'
@@ -944,7 +954,7 @@ object FormHeader: TFormHeader
     Params = <>
     DataSetCloseAction = dcDiscardChanges
     left = 608
-    top = 320
+    top = 368
     object QueryGeomID: TIntegerField
       DisplayWidth = 10
       FieldKind = fkData
@@ -1013,7 +1023,7 @@ object FormHeader: TFormHeader
     end
   end
   object TransactionGeom: TIBTransaction
-    Active = False
+    Active = True
     DefaultDatabase = DM.rDatabase
     Params.Strings = (
       'read_committed'
@@ -1026,10 +1036,10 @@ object FormHeader: TFormHeader
   object DataSourceElmnt: TDataSource
     DataSet = QueryElmnt
     left = 768
-    top = 224
+    top = 184
   end
   object TransactionElmnt: TIBTransaction
-    Active = False
+    Active = True
     DefaultDatabase = DM.rDatabase
     Params.Strings = (
       'read_committed'
@@ -1040,12 +1050,15 @@ object FormHeader: TFormHeader
     top = 272
   end
   object QueryElmnt: TIBQuery
+    AllowAutoActivateTransaction = True
     Database = DM.rDatabase
     Transaction = TransactionElmnt
     BufferChunks = 1000
     CachedUpdates = False
+    EnableStatistics = False
     GenerateParamNames = False
     GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
     SQL.Strings = (
       'Select A.ID, A.NAME, A.DESCRIPTION, A.USERNAME, A.DATETIME, '
       'A.NUMBERCOMPOSITION, A.ETYPE From ELEMENT A WHERE '
@@ -1058,8 +1071,8 @@ object FormHeader: TFormHeader
         ParamType = ptInput
       end>
     DataSetCloseAction = dcDiscardChanges
-    left = 768
-    top = 320
+    left = 776
+    top = 368
     ParamData = <    
       item
         DataType = ftUnknown

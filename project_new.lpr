@@ -22,8 +22,8 @@ begin
   Application.CreateForm(TDBmod, DBmod);
   //Application.CreateForm(TFormMatedit, FormMatedit);
   Application.CreateForm(TFormQueue, FormQueue);
-  Application.CreateForm(TFormmattable, Formmattable);
-  Application.CreateForm(TFormstater, Formstater);
+  //Application.CreateForm(TFormmattable, Formmattable);
+  //Application.CreateForm(TFormstater, Formstater);
   //Application.CreateForm(TDM, DM);
   Application.Run;
 end.

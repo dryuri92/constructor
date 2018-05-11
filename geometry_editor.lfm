@@ -1,22 +1,23 @@
 object FormGeomedit: TFormGeomedit
   Left = 598
-  Height = 428
+  Height = 527
   Top = 364
   Width = 849
   Caption = 'Editing geometry'
-  ClientHeight = 428
+  ClientHeight = 527
   ClientWidth = 849
   Color = clWhite
+  DesignTimePPI = 120
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  LCLVersion = '1.4.2.0'
+  LCLVersion = '1.8.2.0'
   object Paneltree: TPanel
     Left = 0
-    Height = 428
+    Height = 527
     Top = 0
     Width = 160
     Align = alLeft
-    ClientHeight = 428
+    ClientHeight = 527
     ClientWidth = 160
     TabOrder = 0
     object ToolBar1: TToolBar
@@ -72,11 +73,10 @@ object FormGeomedit: TFormGeomedit
     end
     object GeometryTree: TTreeView
       Left = 1
-      Height = 356
+      Height = 455
       Top = 71
       Width = 158
       Align = alClient
-      DefaultItemHeight = 22
       ExpandSignType = tvestPlusMinus
       Images = ImageList1
       PopupMenu = PopupMenu2
@@ -100,11 +100,11 @@ object FormGeomedit: TFormGeomedit
   end
   object Panelgeom: TPanel
     Left = 168
-    Height = 428
+    Height = 527
     Top = 0
     Width = 681
     Align = alClient
-    ClientHeight = 428
+    ClientHeight = 527
     ClientWidth = 681
     PopupMenu = PopupMenu1
     TabOrder = 1
@@ -299,7 +299,7 @@ object FormGeomedit: TFormGeomedit
   end
   object Splitter1: TSplitter
     Left = 160
-    Height = 428
+    Height = 527
     Top = 0
     Width = 8
     MinSize = 35
@@ -664,12 +664,15 @@ object FormGeomedit: TFormGeomedit
     }
   end
   object QuerySurf: TIBQuery
+    AllowAutoActivateTransaction = True
     Database = DM.rDatabase
     Transaction = TransactionSurf
     BufferChunks = 1000
     CachedUpdates = False
+    EnableStatistics = False
     GenerateParamNames = False
     GeneratorField.ApplyOnEvent = gaeOnNewRecord
+    MasterDetailDelay = 0
     SQL.Strings = (
       'Select A.ID, A.NAME, A.NDIM, A.DESCRIPTION From GEOMETRYSURF A'
     )
