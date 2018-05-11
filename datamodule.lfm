@@ -1,0 +1,33 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 310
+  HorizontalOffset = 655
+  VerticalOffset = 221
+  Width = 238
+  object rDatabase: TIBDatabase
+    Connected = True
+    LoginPrompt = False
+    AllowStreamedConnected = False
+    DatabaseName = 'D:\new_constructor\new_constructor\Data\CONSTRUCTOR.FDB'
+    Params.Strings = (
+      'lc_ctype=WIN1251'
+      'user_name=SYSDBA'
+    )
+    IdleTimer = 0
+    TraceFlags = []
+    left = 48
+    top = 24
+  end
+  object wDatabase: TIBDatabase
+    Connected = False
+    LoginPrompt = False
+    AllowStreamedConnected = False
+    Params.Strings = (
+      'lc_ctype=WIN1251'
+    )
+    IdleTimer = 0
+    TraceFlags = []
+    left = 128
+    top = 64
+  end
+end

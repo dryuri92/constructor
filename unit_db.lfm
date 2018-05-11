@@ -1,0 +1,111 @@
+object DBmod: TDBmod
+  Left = 846
+  Height = 490
+  Top = 345
+  Width = 679
+  Caption = 'DBmod'
+  ClientHeight = 490
+  ClientWidth = 679
+  OnCreate = FormCreate
+  LCLVersion = '1.4.2.0'
+  Visible = True
+  object Button1: TButton
+    Left = 8
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 25
+    Top = 104
+    Width = 134
+    Caption = 'Запрос'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 30
+    Top = 160
+    Width = 164
+    AutoSize = True
+    Caption = 'Запрос добавление'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 8
+    Height = 25
+    Top = 216
+    Width = 136
+    Caption = 'Запрос удаление'
+    OnClick = Button4Click
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 8
+    Height = 25
+    Top = 272
+    Width = 136
+    Caption = 'Запрос модификация'
+    OnClick = Button5Click
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 8
+    Height = 25
+    Top = 328
+    Width = 136
+    Caption = 'Запрос генератора'
+    OnClick = Button6Click
+    TabOrder = 5
+  end
+  object Edit1: TEdit
+    Left = 208
+    Height = 28
+    Top = 18
+    Width = 80
+    TabOrder = 6
+    Text = 'Edit1'
+  end
+  object Execute: TButton
+    Left = 320
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'Execute'
+    OnClick = ExecuteClick
+    TabOrder = 7
+  end
+  object Queuecall: TButton
+    Left = 320
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Queuecall'
+    OnClick = MaterialClick
+    TabOrder = 8
+  end
+  object Material: TButton
+    Left = 320
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Material'
+    OnClick = QueuecallClick
+    TabOrder = 9
+  end
+  object State: TButton
+    Left = 320
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'State'
+    OnClick = StateClick
+    TabOrder = 10
+  end
+end

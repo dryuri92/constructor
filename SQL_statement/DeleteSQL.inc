@@ -1,0 +1,6 @@
+// Material table
+DeleteSQLs[1]:='DELETE FROM MATERIALS WHERE ID=:ID';
+// Nuclid_list table
+DeleteSQLs[2]:='DELETE FROM NUCLID_LIST WHERE ID_M=:ID_M';
+DeleteSQLs[3]:='DELETE FROM NUCLID_LIST WHERE (ID_M=:ID_M) AND (ID_N=:ID_N)';
+

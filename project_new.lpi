@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="project_new"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="6">
+      <Item1>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="ibcontrols"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="LazControls"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="ibexpress"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
+    </RequiredPackages>
+    <Units Count="26">
+      <Unit0>
+        <Filename Value="project_new.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit_db.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DBmod"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unit_DB"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Header.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormHeader"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="unit_classes.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="system_info.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="thread_process.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="datamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="DataModule"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="qtable_class.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Qtable_class"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="service_bd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Service_bd"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="instance_class.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Instance_class"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="unitqueue.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormQueue"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="material_editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMatedit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Material_editor"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="service.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Service"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="material_table.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Formmattable"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="iniform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="iniform"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="saver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Formstater"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="exportimport.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ExportImport"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="Source\qtables.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="Source\formmattable.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="Source\formqueue.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="Source\formsaver.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="geometry_editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormGeomedit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="Source\formgeomtable.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="element_editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormElemedit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Element_editor"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="subassembly_editor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormSubedit"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Subassembly_editor"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="fillinstinfo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Fillinstinfo"/>
+      </Unit25>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="project_new"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir);Source"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

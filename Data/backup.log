@@ -1,0 +1,312 @@
+gbak:opened file D:\new_constructor\new_constructor\DATA\CONSTRUCTOR.fbk
+gbak:transportable backup -- data in XDR format
+gbak:		backup file is compressed
+gbak:created database D:\new_constructor\new_constructor\DATA\CONSTRUCTOR_r.FDB, page_size 16384 bytes
+gbak:started transaction
+gbak:restoring domain RDB$2
+gbak:restoring domain RDB$3
+gbak:restoring domain RDB$4
+gbak:restoring domain RDB$5
+gbak:restoring domain RDB$6
+gbak:restoring domain RDB$7
+gbak:restoring domain RDB$8
+gbak:restoring domain RDB$9
+gbak:restoring domain RDB$13
+gbak:restoring domain RDB$11
+gbak:restoring domain RDB$12
+gbak:restoring domain RDB$14
+gbak:restoring domain RDB$15
+gbak:restoring domain RDB$16
+gbak:restoring domain RDB$20
+gbak:restoring domain RDB$18
+gbak:restoring domain RDB$19
+gbak:restoring domain RDB$21
+gbak:restoring domain RDB$22
+gbak:restoring domain RDB$23
+gbak:restoring domain RDB$24
+gbak:restoring domain RDB$30
+gbak:restoring domain RDB$26
+gbak:restoring domain RDB$27
+gbak:restoring domain RDB$28
+gbak:restoring domain RDB$29
+gbak:restoring domain RDB$31
+gbak:restoring domain RDB$32
+gbak:restoring domain RDB$33
+gbak:restoring domain RDB$34
+gbak:restoring domain RDB$35
+gbak:restoring domain RDB$36
+gbak:restoring domain RDB$37
+gbak:restoring domain RDB$38
+gbak:restoring domain RDB$39
+gbak:restoring domain RDB$40
+gbak:restoring domain RDB$41
+gbak:restoring domain RDB$42
+gbak:restoring domain RDB$43
+gbak:restoring domain RDB$44
+gbak:restoring domain RDB$45
+gbak:restoring domain RDB$46
+gbak:restoring domain RDB$47
+gbak:restoring domain RDB$48
+gbak:restoring domain RDB$49
+gbak:restoring domain RDB$50
+gbak:restoring domain RDB$51
+gbak:restoring domain RDB$52
+gbak:restoring domain RDB$53
+gbak:restoring domain RDB$54
+gbak:restoring domain RDB$55
+gbak:restoring domain RDB$56
+gbak:restoring domain RDB$57
+gbak:restoring domain RDB$58
+gbak:restoring domain RDB$61
+gbak:restoring domain RDB$60
+gbak:restoring domain RDB$62
+gbak:restoring domain RDB$63
+gbak:restoring domain RDB$64
+gbak:restoring table NUCLID
+gbak:    restoring column ID
+gbak:    restoring column MASS
+gbak:    restoring column NAME
+gbak:    restoring column DESCRIPTION
+gbak:restoring table MATERIAL
+gbak:    restoring column DATETIME
+gbak:    restoring column ID
+gbak:    restoring column DENSITY
+gbak:    restoring column TEMPERATURE
+gbak:    restoring column MASSA
+gbak:    restoring column DESCRIPTION
+gbak:    restoring column NAME
+gbak:    restoring column USERNAME
+gbak:restoring table CELL
+gbak:    restoring column ID
+gbak:    restoring column PROPERTY_1
+gbak:    restoring column DESCRIPTION
+gbak:restoring table VERSIONS
+gbak:    restoring column DATETIME
+gbak:    restoring column ID
+gbak:    restoring column OLDID
+gbak:    restoring column DESCRIPTION
+gbak:    restoring column USERNAME
+gbak:restoring table NUCLID_LIST
+gbak:    restoring column ID_M
+gbak:    restoring column ID_N
+gbak:    restoring column CONC
+gbak:    restoring column FRAC
+gbak:    restoring column MASS
+gbak:    restoring column NUMATOM
+gbak:restoring table ELEMENT
+gbak:    restoring column ID
+gbak:    restoring column PROPERTY_1
+gbak:    restoring column DESCRIPTION
+gbak:restoring table MATERIAL_LIST
+gbak:    restoring column ID_M
+gbak:    restoring column ID_C
+gbak:    restoring column DIM_IN
+gbak:    restoring column DIM_OUT
+gbak:restoring table SUBASSEMBLY
+gbak:    restoring column ID
+gbak:    restoring column PROPERTY_1
+gbak:    restoring column DESCRIPTION
+gbak:restoring table CELL_LIST
+gbak:    restoring column ID_C
+gbak:    restoring column ID_E
+gbak:    restoring column DIM_IN
+gbak:    restoring column DIM_OUT
+gbak:restoring table SUBASSEMBLY_LIST
+gbak:    restoring column ID_S
+gbak:    restoring column ID_A
+gbak:    restoring column DIM_IN
+gbak:    restoring column DIM_OUT
+gbak:restoring table ASSEMBLY
+gbak:    restoring column ID
+gbak:    restoring column PROPERTY_1
+gbak:    restoring column DESCRIPTION
+gbak:restoring table ELEMENT_LIST
+gbak:    restoring column ID_E
+gbak:    restoring column ID_S
+gbak:    restoring column DIM_IN
+gbak:    restoring column DIM_OUT
+gbak:restoring table REACTOR
+gbak:    restoring column ID
+gbak:    restoring column PROPERTY_1
+gbak:    restoring column DESCRIPTION
+gbak:restoring table ASSEMBLY_LIST
+gbak:    restoring column ID_A
+gbak:    restoring column ID_R
+gbak:    restoring column POS
+gbak:    restoring column DIM
+gbak:restoring generator GEN_MATERIAL_ID value: 7
+gbak:restoring generator GEN_CELL_ID value: 0
+gbak:restoring generator GEN_ELEMENT_ID value: 0
+gbak:restoring generator GEN_SUBASSEMBLY_ID value: 0
+gbak:restoring generator GEN_ASSEMBLY_ID value: 3
+gbak:restoring generator GEN_REACTOR_ID value: 0
+gbak:restoring generator GEN_VERSIONS_ID value: 7
+gbak:restoring stored procedure UPDATE_MATERIAL
+gbak:restoring parameter INP for stored procedure
+gbak:    committing metadata
+gbak:    restoring index FK_ASSEMBLY_LIST_1
+gbak:    restoring index FK_ASSEMBLY_LIST_2
+gbak:    restoring index PK_REACTOR
+gbak:    restoring index FK_ELEMENT_LIST_1
+gbak:    restoring index FK_ELEMENT_LIST_2
+gbak:    restoring index PK_ASSEMBLY
+gbak:    restoring index FK_SUBASSEMBLY_LIST_1
+gbak:    restoring index FK_SUBASSEMBLY_LIST_2
+gbak:    restoring index FK_CELL_LIST_1
+gbak:    restoring index FK_CELL_LIST_2
+gbak:    restoring index PK_SUBASSEMBLY
+gbak:    restoring index FK_MATERIAL_LIST_1
+gbak:    restoring index FK_MATERIAL_LIST_2
+gbak:    restoring index PK_ELEMENT
+gbak:    restoring index FK_NUCLID_LIST_1
+gbak:    restoring index FK_NUCLID_LIST_2
+gbak:    restoring index PK_NUCLID_LIST
+gbak:restoring data for table NUCLID_LIST
+gbak:   15 records restored
+gbak:    restoring index RDB$PRIMARY1
+gbak:restoring data for table VERSIONS
+gbak:   7 records restored
+gbak:    restoring index PK_CELL
+gbak:    restoring index PK_MATERIAL
+gbak:restoring data for table MATERIAL
+gbak:   6 records restored
+gbak:    restoring index PK_NUCLID
+gbak:restoring data for table NUCLID
+gbak:   140 records restored
+gbak:    restoring trigger CHECK_1
+gbak:    restoring trigger CHECK_2
+gbak:    restoring trigger CHECK_3
+gbak:    restoring trigger CHECK_4
+gbak:    restoring trigger CHECK_5
+gbak:    restoring trigger CHECK_6
+gbak:    restoring trigger CHECK_7
+gbak:    restoring trigger CHECK_8
+gbak:    restoring trigger CHECK_9
+gbak:    restoring trigger CHECK_10
+gbak:    restoring trigger CHECK_11
+gbak:    restoring trigger CHECK_12
+gbak:    restoring trigger CHECK_13
+gbak:    restoring trigger CHECK_14
+gbak:    restoring trigger CHECK_15
+gbak:    restoring trigger CHECK_16
+gbak:    restoring trigger MATERIAL_BI
+gbak:    restoring trigger MATERIAL_AI0
+gbak:    restoring trigger MATERIAL_BU0
+gbak:    restoring trigger NUCLID_LIST_AI0
+gbak:    restoring trigger NUCLID_LIST_AU0
+gbak:    restoring trigger NUCLID_LIST_AD0
+gbak:    restoring trigger VERSIONS_BI
+gbak:    restoring trigger VERSIONS_BI0
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user PUBLIC
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user PUBLIC
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user PUBLIC
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:    restoring privilege for user SYSDBA
+gbak:creating indexes
+gbak:    activating and creating deferred index PK_REACTOR
+gbak:    activating and creating deferred index PK_ASSEMBLY
+gbak:    activating and creating deferred index PK_SUBASSEMBLY
+gbak:    activating and creating deferred index PK_ELEMENT
+gbak:    activating and creating deferred index PK_NUCLID_LIST
+gbak:    activating and creating deferred index RDB$PRIMARY1
+gbak:    activating and creating deferred index PK_CELL
+gbak:    activating and creating deferred index PK_MATERIAL
+gbak:    activating and creating deferred index PK_NUCLID
+gbak:    activating and creating deferred index FK_NUCLID_LIST_1
+gbak:    activating and creating deferred index FK_NUCLID_LIST_2
+gbak:    activating and creating deferred index FK_MATERIAL_LIST_1
+gbak:    activating and creating deferred index FK_MATERIAL_LIST_2
+gbak:    activating and creating deferred index FK_CELL_LIST_1
+gbak:    activating and creating deferred index FK_CELL_LIST_2
+gbak:    activating and creating deferred index FK_ELEMENT_LIST_1
+gbak:    activating and creating deferred index FK_ELEMENT_LIST_2
+gbak:    activating and creating deferred index FK_SUBASSEMBLY_LIST_1
+gbak:    activating and creating deferred index FK_SUBASSEMBLY_LIST_2
+gbak:    activating and creating deferred index FK_ASSEMBLY_LIST_1
+gbak:    activating and creating deferred index FK_ASSEMBLY_LIST_2
+gbak:    committing metadata
+gbak:finishing, closing, and going home
